@@ -2,4 +2,7 @@
 <resources>
     <string name="hello">Hello World, GrayCardActivity!</string>
     <string name="app_name">GrayCard</string>
+    <string name="GrayCard">GrayCard</string>
+    <string name="WGBCard">WGBCard</string>
+    <string name="StopCard">StopCard</string>
 </resources>

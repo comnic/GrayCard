@@ -5,6 +5,15 @@
 	android:layout_width="fill_parent"
 	android:layout_height="fill_parent"
 	>
-    <LinearLayout android:id="@+id/adLayout" android:layout_width="fill_parent" android:layout_weight="0" android:layout_height="75px"></LinearLayout>
-	<ImageView android:layout_weight="1" android:background="@drawable/gray128" android:layout_height="wrap_content" android:id="@+id/imageView1" android:layout_width="fill_parent"></ImageView>
+    <LinearLayout android:id="@+id/adLayout" android:layout_width="fill_parent" android:layout_weight="0" android:layout_height="80px"></LinearLayout>
+	<FrameLayout android:id="@+id/frameLayout1" android:layout_height="wrap_content" android:layout_width="fill_parent">
+		<ImageView android:layout_weight="1" android:layout_width="fill_parent" android:id="@+id/imgGrayCard" android:background="@drawable/gray_card" android:layout_height="fill_parent"></ImageView>
+		<ImageView android:layout_weight="1" android:layout_width="fill_parent" android:id="@+id/imgWGBCard" android:background="@drawable/wgb_card" android:layout_height="fill_parent" android:visibility="invisible"></ImageView>
+		<ImageView android:layout_weight="1" android:layout_width="fill_parent" android:id="@+id/imgStopCard" android:background="@drawable/stop_card" android:layout_height="fill_parent" android:visibility="invisible"></ImageView>
+	</FrameLayout>
+    <LinearLayout android:id="@+id/menuLayout" android:layout_width="fill_parent" android:layout_weight="0" android:layout_height="60px">
+        <Button android:layout_height="fill_parent" android:layout_width="wrap_content" android:layout_weight="1" android:text="@string/GrayCard" android:layout_margin="0px" android:id="@+id/btnGrayCard"></Button>
+        <Button android:layout_height="fill_parent" android:layout_width="wrap_content" android:layout_weight="1" android:text="@string/WGBCard" android:layout_margin="0px" android:id="@+id/btnWGBCard"></Button>
+        <Button android:layout_height="fill_parent" android:layout_width="wrap_content" android:layout_weight="1" android:text="@string/StopCard" android:layout_margin="0px" android:id="@+id/btnStopCard"></Button>
+    </LinearLayout>
 </LinearLayout>
